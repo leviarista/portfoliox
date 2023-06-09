@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <nav className="px-6 py-3 flex justify-between items-center text-2xl">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="relative drop-shadow-[0_0_0.3rem_#00000070] dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/portfoliox-logo.svg"
           alt="Portfoliox Logo"
           width={70}
@@ -19,10 +19,7 @@ export default function Home() {
           <a href="#" className="text-primary">
             Explore
           </a>
-          <a
-            href="#"
-            className="min-w-[155px] h-[45px] flex justify-center items-center bg-primary text-white text-3xl rounded-md"
-          >
+          <a href="#" className="btn-primary">
             Create
           </a>
         </div>
@@ -42,7 +39,7 @@ export default function Home() {
       <main className="flex flex-col justify-center items-center p-5 min-h-[calc(100vh-100px-55px)]">
         <h1 className="text-7xl">PORTFOLIOX</h1>
         <Image
-          className="relative mt-4 dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="relative mt-4 drop-shadow-[0_0_4px_#ffffff70] dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/portfoliox-logo.svg"
           alt="Portfoliox Logo"
           width={100}
@@ -67,7 +64,7 @@ export default function Home() {
           </p>
           <div className="my-8 flex justify-center">
             <Image
-              className="relative dark:drop-shadow-[0_0_4_#11111140]"
+              className="relative drop-shadow-[0_0_4_#ffffff70]"
               src="/home-screenshots.png"
               alt="Home Screenshots"
               width={313}
@@ -77,19 +74,13 @@ export default function Home() {
           <div className="flex flex-col-reverse md:flex-row justify-center gap-8">
             <div className="flex flex-col gap-2">
               <p className="text-xl">{"See other's projects"}</p>
-              <a
-                href="#"
-                className="min-w-[155px] h-[45px] flex justify-center items-center bg-primary text-white border border-white rounded-md"
-              >
+              <a href="#" className="btn-primary-outline shadow-[#FFFFFF70]">
                 Explore
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-xl">No need to signup</p>
-              <a
-                href="#"
-                className="min-w-[155px] h-[45px] flex justify-center items-center bg-white text-primary rounded-md"
-              >
+              <p className="text-xl">{"It's free"}</p>
+              <a href="#" className="btn-primary bg-white text-primary shadow-[#FFFFFF70]">
                 {"Let's go!"}
               </a>
             </div>
