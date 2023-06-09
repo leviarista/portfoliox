@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Passion_One } from "next/font/google";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const passionOne = Passion_One({
   weight: ["400", "700", "900"],
@@ -18,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={passionOne.className + " min-h-screen"}>{children}</body>
+      <body className={passionOne.className}>
+        <NavBar />
+        <div className="min-h-[calc(100vh-100px-52px)]">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
